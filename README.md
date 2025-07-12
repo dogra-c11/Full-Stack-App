@@ -1,7 +1,38 @@
-A basic full stack application which shows a list of games that comes from an api in backend and is shown in the UI through react
+# Full Stack Games App
 
-backend is made using nodejs 
+A basic full stack application that displays a list of games fetched from a backend API and rendered in the UI using React.
 
-frontent is made using reactjs
+## Tech Stack
 
-I understood how to connect frontend with backend using axios and usage of proxy to remove cors issue
+- **Backend:** Node.js (Express)
+- **Frontend:** React.js
+- **HTTP Client:** Axios
+
+## Features
+
+- Backend API serves a list of games.
+- Frontend fetches and displays games using Axios.
+- Proxy setup in development to avoid CORS issues.
+
+## How to Run
+
+### Backend
+
+```sh
+cd Backend
+npm install
+npm run start
+```
+
+### Frontend
+
+```sh
+cd Frontend
+npm install
+npm run dev
+```
+
+## Notes
+
+- The frontend uses a proxy (configured in `vite.config.js`) to forward API requests to the backend, avoiding CORS issues during development.
+- Make sure both backend and frontend servers are running for the app to work.
